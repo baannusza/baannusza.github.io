@@ -27,6 +27,114 @@
             font-family: "prompt";
         }
     </style>
+
+     <!===================== button =================!>
+    <style>
+.button {
+  border: none;
+  outline: none;
+  background-color: #3a3a3a;
+  width: 180px;
+  height: 60px;
+  font-family: "prompt";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 106%;
+  height: 120%;
+  z-index: -1;
+  border-radius: inherit;
+  transition: all 0.3s;
+}
+
+.gradient-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 106%;
+  height: 115%;
+  overflow: hidden;
+  border-radius: inherit;
+  z-index: -2;
+  filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.gradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  transition: all 0.3s;
+  background-image: linear-gradient(
+    90deg,
+    hsl(226, 81%, 64%),
+    hsl(271, 81%, 64%),
+    hsl(316, 81%, 64%),
+    hsl(1, 81%, 64%),
+    hsl(46, 81%, 64%),
+    hsl(91, 81%, 64%),
+    hsl(136, 81%, 64%),
+    hsl(181, 81%, 64%)
+  );
+  animation: rotate 2s linear infinite;
+  filter: blur(10px);
+}
+
+.label {
+  width: 156px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 22px;
+  background-color: rgba(43, 43, 43, 1);
+  background-image: linear-gradient(
+    180deg,
+    rgb(43, 43, 43) 0%,
+    rgb(68, 68, 68) 100%
+  );
+}
+
+.button:hover .gradient-container {
+  transform: translate(-50%, -50%) scale(0.98);
+  filter: blur(5px);
+}
+
+.button:hover .gradient {
+  filter: blur(5px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+    </style>
    </head>
    <body>
     <!--   NOW THAT YOU GOT THE CODE, YOU SUBSCRIBE TO MY CHANNEL NERDYCODECRAFTER PLEASE! I REALLY NEED YOUR HELP THERE:
@@ -84,63 +192,50 @@ https://www.youtube.com/@NerdyCodeCrafter?sub_confirmation=1  -->
             </div>
          </section>
 
-         <!--==================== ABOUT ====================-->
+         <!--==================== สถานะที่ตั้ง ====================-->
          <section id="about" class="about">
             <div class="abtImg_profile" data-reveal="left">
                <div class="abtImg_border one"></div>
                <div class="abtImg_border two"></div>
                <div class="img_box">
-                  <img src="assets/img/about.jpg" alt="" class="abtImg" width="100%">
+                  <img src="assets/img/satana-1.png" alt="" class="abtImg" width="100%">
                </div>
                <div class="profile_name">
-                  <div class="sub_title">perry dom</div>
-                  <a href="#contact" class="abt_contactLink">
+                  <div class="sub_title">วัดเขาคันทรง</div>
                      <span class="circle"></span>
-                     <div>i'm available for freelance job, hire me!</div>
-                  </a>
+                     <div><font color="#000000">
+                                                     <center>"สุโข ปุญฺญสฺส อุจฺจโย"</center>
+                     <br>
+                                                     การสั่งสมบุญ นำมาซึ่งความสุข</font></div>
                </div>
             </div>
             <div class="abt_content" data-reveal="right">
                <div class="text_wrapper">
-                  <div class="top">About me</div>
-                  <div class="bottom" aria-hidden="true">About me</div>
+                  <div class="top">สถานะ ที่ตั้ง</div>
+                  <div class="bottom" aria-hidden="true">สถานะ ที่ตั้ง</div>
                </div>
-               <h2 class="sub_title">biography</h2>
+               <h2 class="sub_title">วัดเขาคันทรง</h2>
                <p class="section_desc">
-                  Hi! I'm Perry Dom, a passionate Web Designer & Creative Developer. I specialize in creating innovative and user-centric designs with a touch of creativity. Let's build something amazing together! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, nobis. Assumenda mollitia modi eius quas sit quia sapiente esse minima! A explicabo molestiae illum minus sunt cum fuga enim voluptatibus.
-               </p>
-               <table class="about_table">
-                  <tr>
-                     <th>name: </th>
-                     <td>Perry Dom</td>
-                  </tr>
-                  <tr>
-                     <th>birthday: </th>
-                     <td>1st sept 1770</td>
-                  </tr>
-                  <tr>
-                     <th>age: </th>
-                     <td>3 centuries</td>
-                  </tr>
-                  <tr>
-                     <th>phone: </th>
-                     <td><a href="tel:+1234567890" class="link_underline">(+12)34567890</a></td>
-                  </tr>
-                  <tr>
-                     <th>email: </th>
-                     <td><a href="mailto:abc@gmail.com" class="link_underline">abc@gmail.com</a></td>
-                  </tr>
-                  <tr>
-                     <th>Linkedin: </th>
-                     <td><a href="#" class="link_underline">@abc/linkedin.com</a></td>
-                  </tr>
-               </table>
-               <button class="download_cv">
-                  <i class="ri-download-cloud-line icn"></i>
-                  <span>download CV</span>
-               </button>
+               <font color="#000000">วัดเขาคันทรง เป็นวัดราษฎร์ สังกัดคณะสงฆ์มหานิกาย ตั้งอยู่ที่ ๙/๙ หมู่ที่ ๔ ตำบลเขาคันทรง อำเภอศรีราชา จังหวัดชลบุรี 
+                                        ปัจจุบัน พระอธิการนิตย์ เขมวณฺโณ ดำรงตำแหน่งเจ้าอาวาสวัดเขาคันทรง โดยมีพระสงฆ์ และ สามเณรจำพรรษาทั้งหมด 13 รูป ในปีพ.ศ. 2567
+               </font></p>
+               <a href="##">
+               <br>
+               <center>
+                <button class="button">
+                <span class="label">อ่านสถานะที่ตั้งวัด  &#8594</span>
+                <span class="gradient-container">
+                <span class="gradient"></span>
+                </span>
+                </button>
+               </center>
+               </a>
+               <br><br>
+               <img src="assets/img/satana-2.png" alt="">
             </div>
          </section>
+
+
 
          <!--==================== SERVICES ====================-->
          <section class="services" id="services">
