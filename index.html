@@ -35,7 +35,7 @@
   outline: none;
   background-color: #3a3a3a;
   width: 180px;
-  height: 60px;
+  height: 40px;
   font-family: "prompt";
   font-size: 18px;
   color: #fff;
@@ -137,6 +137,22 @@
     </style>
 
 
+<!--------เปิด  สว่าง มึด------------!>
+<style>
+.dark-mode {
+  font-family: "prompt";
+  background-color: #336666;
+  color: white;
+}
+</style>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<!--------ปิด  สว่าง มึด------------!>
+
 
 
 
@@ -149,7 +165,7 @@ https://www.youtube.com/@NerdyCodeCrafter?sub_confirmation=1  -->
       <header class="header" id="header">
          <div class="head_name" data-reveal>
             <h3><font color=#ff8f00>วัดเขาคันทรง</font></h3>
-            <p><font color=blue>ศรี่ราชา ชลบุรี</font></p>
+            <span class="label danger"onclick="myFunction()"><font size=4 color=#fff>โหมดสว่างมึด</font></span>
          </div>
          <div class="contactChat_head icns" data-reveal>
             <a href="mailto:yourname@example.com" class="email icon"><font size=4 color=red>baannusza@gmail.com</font></a>
