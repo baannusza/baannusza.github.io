@@ -1107,4 +1107,14 @@ form{
   .contactForm_container{
     width: 65%;
   }
+        @font-face {
+            font-family: "prompt"; font-stretch: normal; font-style: normal; font-weight: 400;
+            src: url('https://855tech-mobile.s3.ap-east-1.amazonaws.com/content/css/fonts/prompt/Prompt-Regular.eot?#iefix') format('embedded-opentype'),
+                url('https://855tech-mobile.s3.ap-east-1.amazonaws.com/content/css/fonts/prompt/Prompt-Regular.woff2') format('woff2'),
+                url('https://855tech-mobile.s3.ap-east-1.amazonaws.com/content/css/fonts/prompt/Prompt-Regular.woff') format('woff'),
+                url('https://855tech-mobile.s3.ap-east-1.amazonaws.com/content/css/fonts/prompt/Prompt-Regular.ttf') format('truetype');
+        }
+        body {
+            font-family: "prompt";
+        }
 }
