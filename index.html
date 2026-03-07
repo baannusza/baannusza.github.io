@@ -221,6 +221,64 @@ https://www.youtube.com/@NerdyCodeCrafter?sub_confirmation=1  -->
             </div>
          </section>
 
+<style>
+.mySlides {display:none}
+</style>
+
+         <section id="about" class="about">
+<div class="w3-container">
+  <center><h1>วัดเขาคันทรง</h1></center>
+  <p><font size=4>เป็นวัดราษฎร์ สังกัดคณะสงฆ์มหานิกาย ตั้งอยู่ที่ ๙/๙ หมู่ที่ ๔ ตำบลเขาคันทรง อำเภอศรีราชา จังหวัดชลบุรี</font></p>
+</div>
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="assets/img/Slide-1.jpg" style="width:100%">
+  <img class="mySlides" src="assets/img/Slide-2.png" style="width:100%">
+  <img class="mySlides" src="assets/img/Slide-3.png" style="width:100%">
+  <img class="mySlides" src="assets/img/Slide-4.png" style="width:100%">
+  <img class="mySlides" src="assets/img/Slide-5.png" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <center>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none" stroke="#1044de" stroke-dasharray="10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 12l5 -5M14 12l5 5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="10;0"/></path><path stroke-dashoffset="10" d="M9 12l5 -5M9 12l5 5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.4s" to="0"/></path><path stroke-dashoffset="10" d="M4 12l5 -5M4 12l5 5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.4s" to="0"/></path></g></svg></button>
+      &nbsp;&nbsp;
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none" stroke="#1044de" stroke-dasharray="10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 12l-5 -5M10 12l-5 5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="10;0"/></path><path stroke-dashoffset="10" d="M15 12l-5 -5M15 12l-5 5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.4s" to="0"/></path><path stroke-dashoffset="10" d="M20 12l-5 -5M20 12l-5 5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.4s" to="0"/></path></g></svg></button>
+    </center>
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+
+
          <!--==================== สถานะที่ตั้ง ====================-->
          <section id="about" class="about">
             <div class="abtImg_profile" data-reveal="left">
@@ -263,6 +321,7 @@ https://www.youtube.com/@NerdyCodeCrafter?sub_confirmation=1  -->
                <img src="assets/img/satana-2.png" alt="">
             </div>
          </section>
+
 
 
          <!--==================== ประวัติ พระอธิการนิตย์ ====================-->
