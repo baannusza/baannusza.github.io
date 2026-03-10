@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Electra - Electrical Website Template</title>
+        <title>วัดเขาคันทรง เว็บธรรมะ</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -41,6 +41,21 @@
             font-family: "prompt";
         }
     </style>
+
+<!=============== css ตรึงแนวด้านล่าง ================!>
+<style type="text/css">
+div.iBannerFix{
+    height:30px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    background-color:#fff;
+    width:100%;color:#000000;
+    z-index: 99;
+}
+</style>
+
+
     </head>
 
     <body>
@@ -185,6 +200,23 @@
             </div>
         </div>
         <!-- Carousel End -->
+
+
+        <div class="container-fluid about bg-light py-5">
+        <marquee direction="left"><img src="https://image.jimcdn.com/app/cms/image/transf/dimension=242x10000:format=png/path/s02adad4aa49f38f4/image/i17be77d733824a2c/version/1709981322/image.png"
+        width="200px" height="150px" /> <img src=
+        "https://image.jimcdn.com/app/cms/image/transf/dimension=682x2048:format=jpg/path/s02adad4aa49f38f4/image/i9c962b69f2234de6/version/1707324282/image.jpg" width="200px" height="150px" />
+        <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=682x2048:format=jpg/path/s02adad4aa49f38f4/image/ibff38449ae13e162/version/1707324282/image.jpg" width="200px" height=
+        "150px" /> <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s02adad4aa49f38f4/image/i2125acb31f4d685b/version/1707324282/image.jpg" width="200px" height="150px" /> <img src=
+        "https://image.jimcdn.com/app/cms/image/transf/dimension=682x2048:format=jpg/path/s02adad4aa49f38f4/image/i6c197974392448e5/version/1710770770/image.jpg" width="200px" height="150px" />
+        <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=682x2048:format=jpg/path/s02adad4aa49f38f4/image/i915da11de2c49d7d/version/1710770770/image.jpg" width="200px" height=
+        "150px" /> <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=682x2048:format=jpg/path/s02adad4aa49f38f4/image/i09bffbb4e4f38da1/version/1710770770/image.jpg" width="200px"
+        height="150px" /> <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=682x2048:format=jpg/path/s02adad4aa49f38f4/image/ie98368f1dcb2c91d/version/1710770770/image.jpg" width=
+        "200px" height="150px" /> <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=682x2048:format=jpg/path/s02adad4aa49f38f4/image/i3c4f0137ca0110d7/version/1710770770/image.jpg"
+        width="200px" height="150px" /> <img src=
+        "https://image.jimcdn.com/app/cms/image/transf/dimension=682x2048:format=jpg/path/s02adad4aa49f38f4/image/ic52bc659390af6dc/version/1710770770/image.jpg" width="200px" height=
+        "150px" /></marquee><br />
+         </div>
 
 
         <!-- เปิด สถานะ ที่ตั้ง -->
@@ -1026,6 +1058,7 @@ document.getElementById("defaultOpen").click();
         <!-- Team End -->
 
 
+
         <!-- Footer Start -->
         <div class="container-fluid footer bg-dark py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
@@ -1107,6 +1140,11 @@ document.getElementById("defaultOpen").click();
         </div>
         <!-- Copyright End -->
 
+                    <!==== ตรึงแนวด้านล่าง ======!>
+        <div class="container-fluid about bg-light py-5">
+            <div class="iBannerFix">
+             <p align="center"><marquee direction="left"> วัดเขาคันทรง เป็นวัดราษฎร์ สังกัดคณะสงฆ์มหานิกาย ตั้งอยู่ที่ ๙/๙ หมู่ที่ ๔ ตำบลเขาคันทรง อำเภอศรีราชา จังหวัดชลบุรี </marquee></p>
+            </div>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
@@ -1123,6 +1161,16 @@ document.getElementById("defaultOpen").click();
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+
+<!===============script สว่าง มึด ================!>
+<script>const btn = document.getElementById("theme-toggle");
+
+btn.addEventListener("click", function() {
+  // สลับ class 'dark-mode' ที่ body
+  document.body.classList.toggle("dark-mode");
+});
+</script>
     </body>
 
 </html>
