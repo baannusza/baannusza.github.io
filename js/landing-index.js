@@ -1,1 +1,0 @@
-document.querySelectorAll(".ql-editor").forEach((editor,index)=>{new Quill(editor,{theme:"snow",readOnly:true})});$(document).ready(function(){Fancybox.bind("[data-fancybox]",{})});
